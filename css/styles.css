@@ -23,20 +23,21 @@ body::before{
     color: #fff;
     background-color: rgba(0, 0, 0, .8);
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translate(0, 50%);
     box-sizing: border-box;
-    width: 750px;
+    width: 40vw;
     padding: 40px;
-    height: 1500px;
 }
 #title, #description{
     text-align: center;
     color: #fff;
 }
 #title{
-    font-size: 35px;
+    font-size: 40px;
     padding-top: 30px;
 }
 #description,label{
@@ -75,4 +76,10 @@ input[type="submit"]{
 }
 .button-submit{
     text-align: center;
+}
+input[type=radio], input[type=checkbox] {
+    border: 0px;
+    width: 1.2vw;
+    height: 2em;
+    vertical-align:middle;
 }
