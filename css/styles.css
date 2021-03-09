@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-family: sans-serif;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.container{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    width: 750px;
+    padding: 40px;
+    height: 1500px;
+}
+#title, #description{
+    text-align: center;
+    color: #fff;
+}
+#title{
+    font-size: 35px;
+    padding-top: 30px;
+}
+#description,label{
+    font-size: 20px;
+}
+input, select{
+    margin: 10px 0 10px 0;
+}
+input[type="text"], 
+input[type="email"],
+input[type="number"],
+select{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.check{
+    padding: 10px 0 10px;
+}
+section{
+    padding: 10px 0 10px;
+}
+.text-area textarea{
+    margin: 15px 0 10px;
+    width: 100%;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 45px;
+    background-color: lightgreen;
+    font-size: 20px;
+    color: black;
+}
+.button-submit{
+    text-align: center;
+}
