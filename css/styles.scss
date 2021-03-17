@@ -1,0 +1,133 @@
+// Global features
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+//  Backgrounds of body and container
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);       
+}
+.container{
+    background: rgba($color: #000000, $alpha: .85);
+}
+//Fix the direction of radio and checkbox inputs
+.content__box__items{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 2rem;
+}
+//Margin, padding, width, height and color
+
+.container{
+    margin: 5rem auto;
+    width: 800px;
+    border-radius: 1rem;
+    padding: 3rem;
+    padding-bottom: 2rem;
+}
+
+.header{
+    text-align: center;
+    &__title{
+        line-height: 2;
+    }
+}
+.content{
+    &__box{
+        margin: 2.5rem 0;
+    }
+    &__data{
+        margin: .5rem 0;
+    }
+    &__box__items{
+        margin-top: 1rem;
+        margin-bottom: -.8rem;
+    }
+    &__radio{
+        margin-right: .5rem;
+        margin-bottom: .8rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    &__input, 
+    &__select{
+        padding-left: 1rem;
+        padding-bottom: .2rem;
+        width: 97%;
+        height: 2rem;
+        border-radius: 5px;
+        background: transparent;
+        border: none;
+        border-bottom: 5px solid turquoise;
+        
+    }
+    &__select,
+    &_item{
+        width: 100%;
+    }
+    &_item{
+        width: 100%;
+        background-color: rgba(turquoise,.1);
+        color: black;
+    }
+    &__area{
+        padding:1rem;
+        width: 95%;
+        resize: none;
+        background: transparent;
+        border: none;
+        border-bottom: 5px solid turquoise;
+    }
+}
+.footer{
+    text-align: center;
+    &__text{
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 800px){
+    .container{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 650px){
+    h1{
+        font-size: 1.6rem;
+    }
+    .header{
+        &__title{
+            margin-bottom: 1rem;
+        }
+    }
+    .container{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 550px){
+    .container{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 480px){
+    .container{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 430px){
+    .container{
+        min-width: 300px;
+    }
+}

@@ -1,86 +1,147 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.2rem;
 }
 
-body::before{
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    font-family: sans-serif;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
+body {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-.container{
-    color: #fff;
-    background-color: rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translate(0, 0);
-    box-sizing: border-box;
-    width: 40vw;
-    padding: 40px;
+.container {
+  background: rgba(0, 0, 0, 0.85);
 }
-#title, #description{
-    text-align: center;
-    color: #fff;
+
+.content__box__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-#title{
-    font-size: 40px;
-    padding-top: 30px;
+
+h1 {
+  font-size: 2rem;
 }
-#description,label{
-    font-size: 20px;
-    padding-bottom: 30px;
+
+.container {
+  margin: 5rem auto;
+  width: 800px;
+  border-radius: 1rem;
+  padding: 3rem;
+  padding-bottom: 2rem;
 }
-input, select{
-    margin: 10px 0 10px 0;
+
+.header {
+  text-align: center;
 }
-input[type="text"], 
-input[type="email"],
-input[type="number"],
-select{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 18px;
+
+.header__title {
+  line-height: 2;
 }
-.check{
-    padding: 10px 0 10px;
+
+.content__box {
+  margin: 2.5rem 0;
 }
-section{
-    padding: 10px 0 10px;
+
+.content__data {
+  margin: .5rem 0;
 }
-.text-area textarea{
-    margin: 15px 0 10px;
-    width: 100%;
-    font-size: 20px;
+
+.content__box__items {
+  margin-top: 1rem;
+  margin-bottom: -.8rem;
 }
-input[type="submit"]{
-    width: 100%;
-    height: 45px;
-    background-color: lightgreen;
-    font-size: 20px;
-    color: black;
+
+.content__radio {
+  margin-right: .5rem;
+  margin-bottom: .8rem;
+  width: 1rem;
+  height: 1rem;
 }
-.button-submit{
-    text-align: center;
+
+.content__input, .content__select {
+  padding-left: 1rem;
+  padding-bottom: .2rem;
+  width: 97%;
+  height: 2rem;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 5px solid turquoise;
 }
-input[type=radio], input[type=checkbox] {
-    border: 0px;
-    width: 1.2vw;
-    height: 2em;
-    vertical-align:middle;
+
+.content__select, .content_item {
+  width: 100%;
 }
+
+.content_item {
+  width: 100%;
+  background-color: rgba(64, 224, 208, 0.1);
+  color: black;
+}
+
+.content__area {
+  padding: 1rem;
+  width: 95%;
+  resize: none;
+  background: transparent;
+  border: none;
+  border-bottom: 5px solid turquoise;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer__text {
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .header__title {
+    margin-bottom: 1rem;
+  }
+  .container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    min-width: 300px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
